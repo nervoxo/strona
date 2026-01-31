@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6fbfd6, #4aa3b8);
+  color: #fff;
+}
+
+.hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  opacity: 0.9;
+}
+
+section {
+  padding: 60px 10%;
+}
+
+.content ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.gallery-section {
+  background: rgba(255,255,255,0.1);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.2);
+}
+
+/* Animacje */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay {
+  transition-delay: 0.4s;
+}
